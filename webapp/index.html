@@ -4,18 +4,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta charset="UTF-8">
  	<title>Walkthrough</title>
-      <script
-         id="sap-ui-bootstrap"
-         src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
-         data-sap-ui-theme="sap_bluecrystal"
-         data-sap-ui-libs="sap.m"
-         data-sap-ui-compatVersion="edge"
-         data-sap-ui-preload="async" >
+      <script id="sap-ui-bootstrap"
+	          src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
+	          data-sap-ui-theme="sap_bluecrystal"
+	          data-sap-ui-libs="sap.m"
+	          data-sap-ui-compatVersion="edge"
+	          data-sap-ui-preload="async"
+	          data-sap-ui-resourceroots='{"PrimordialApp": "./"}'>
       </script>
       <script>
          sap.ui.getCore().attachInit(function () {
-               new sap.m.Text({
-               text : "Hello World"
+            sap.ui.xmlview({
+               viewName : "PrimordialApp.view.PrimordialView1"
             }).placeAt("content");
          });
       </script>

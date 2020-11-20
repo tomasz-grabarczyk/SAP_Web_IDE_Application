@@ -1,0 +1,5 @@
+<mvc:View controllerName="PrimordialApp.controller.PrimordialView1" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+   <Button id="button0"
+		   text="Click Me!"
+		   press="onShowHello"/>
+</mvc:View>
