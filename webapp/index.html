@@ -14,9 +14,9 @@
       </script>
       <script>
          sap.ui.getCore().attachInit(function () {
-            sap.ui.xmlview({
-               viewName : "PrimordialApp.view.PrimordialView1"
-            }).placeAt("content");
+			new sap.ui.core.ComponentContainer({
+				name : "PrimordialApp"
+			}).placeAt("content");
          });
       </script>
    </head>

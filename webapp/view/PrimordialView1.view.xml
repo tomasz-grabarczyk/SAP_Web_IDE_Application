@@ -1,4 +1,4 @@
 <mvc:View controllerName="PrimordialApp.controller.PrimordialView1" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
-	<Button id="button0" text="Click Me!" press="onShowHello"/>
-	<Input value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%"/>
+	<Button text="{i18n>buttonText}" press="onShowHello"/>
+	<Input value="{/person/name}" description="Hello {/person/name}" valueLiveUpdate="true" width="60%"/>
 </mvc:View>
