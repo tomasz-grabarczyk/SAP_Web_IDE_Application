@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
-	"sap/ui/model/json/JSONModel"
-], function (UIComponent, JSONModel) {
+	"sap/ui/model/json/JSONModel",
+	"PrimordialApp/controller/HelloDialog"
+], function (UIComponent, JSONModel, HelloDialog) {
 	"use strict";
 	return UIComponent.extend("PrimordialApp.Component", {
 		metadata: {
@@ -14,10 +15,16 @@ sap.ui.define([
 				person: {
 					name: "Tomasz",
 					surname: "Grabarczyk"
+				},
+				
+				car: {
+					brand: "Opel",
+					year: "2020"
 				}
 			};
-			var oModel = new JSONModel(oData);
-			this.setModel(oModel);
+			
+			this.setModel(new JSONModel(oData));
+			this.helloDialog = new HelloDialog();
 		}
 	});
 });

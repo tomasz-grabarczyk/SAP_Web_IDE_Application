@@ -1,0 +1,10 @@
+<mvc:View controllerName="PrimordialApp.controller.HelloPanel" xmlns="sap.m" xmlns:mvc="sap.ui.core.mcv">
+	<Panel headerText="{i18n>helloPanelTitle}" class="sapUiResponsiveMargin" width="auto">
+		<content>
+			<Button text="{i18n>openDialogButtonText}" press="onOpenDialog" class="sapUiSmallMarginEnd"/>
+			<Button text="{i18n>buttonText}" press="onShowHello" class="primordialCustomButton"/>
+			<Input id="nameField" placeholder="Type your name here!" valueLiveUpdate="true" width="60%"/>
+			<Text id="fieldText" text="Hello {/person/name}, how are you today?" class="sapUiSmallMargin primordialCustomText"/>
+		</content>
+	</Panel>
+</mvc:View>

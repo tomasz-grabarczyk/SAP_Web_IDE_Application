@@ -1,4 +1,14 @@
-<mvc:View controllerName="PrimordialApp.controller.PrimordialView1" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
-	<Button text="{i18n>buttonText}" press="onShowHello"/>
-	<Input value="{/person/name}" description="Hello {/person/name}" valueLiveUpdate="true" width="60%"/>
+<mvc:View controllerName="PrimordialApp.controller.PrimordialView1" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" displayBlock="true">
+	<App class="PrimordialCSSClass">
+		<pages>
+			<Page title="{i18n>homePageTitle}">
+				<headerContent>
+					<Button icon="sap-icon://hello-world" tooltip="world" press="onOpenDialog"/>
+				</headerContent>
+				<content>
+					<mvc:XMLView viewName="PrimordialApp.view.HelloPanel"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>

@@ -1,0 +1,13 @@
+.PrimordialCSSClass .primordialCustomButton.sapMBtn {
+    margin-right: 0.125rem;
+}
+
+html[dir="rtl"] .PrimordialCSSClass .primordialCustomButton.sapMBtn {
+    margin-left: 0.125rem;
+    margin-right: 0;
+}
+
+.PrimordialCSSClass .primordialCustomText {
+    font-style: italic;
+    font-weight: bold;
+}
